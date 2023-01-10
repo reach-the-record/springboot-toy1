@@ -12,12 +12,12 @@ import java.util.Optional;
 @Service
 public class MemberService {
 
-    private final MemberRepository memberRepository;
+    private MemberRepository memberRepository;
     @Autowired
     public MemberService(MemberRepository repo) {
         memberRepository = repo;
     }
-    
+
     /*
     * 회원 가입
     * */
